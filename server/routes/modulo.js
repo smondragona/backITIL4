@@ -3,6 +3,16 @@ const Modulo = require('../models/modulo');
 
 const app = express();
 
+app.get('/modulo', (req, res) => {
+
+  //console.log('usuario....' + req.usuario)
+ 
+ return res.json({
+   menssage: 'Mensaje de modulos'
+  }) 
+  
+ });
+
  app.post('/modulo', function (req, res) {
   
    let body = req.body;
